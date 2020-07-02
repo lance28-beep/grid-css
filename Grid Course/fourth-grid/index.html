@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/basic.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>template areas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Example 1</h2>
+      <div class="display__col">
+        <div class="grid grid__1">
+          <div class="header">header</div>
+          <div class="menu">menu</div>
+          <div class="content">content</div>
+          <div class="footer">footer</div>
+        </div>
+        <div class="grid grid__2">
+          <div class="header">header</div>
+          <div class="menu">menu</div>
+          <div class="content">content</div>
+          <div class="footer">footer</div>
+        </div>
+      </div>
+      <div class="display__col">
+        <code>
+          <pre>
+      .grid__1 {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /*v*/
+        grid-template-rows: 40px auto 40px; /*-->*/
+        gap: 3px;
+        grid-template-areas:
+          "m m h h h h h h h h h h"
+          "m m c c c c c c c c c c"
+          "f f f f f f f f f f f f";
+        border: 1px solid #071a52;
+      }
+      .grid__1 .header {
+        grid-area: h;
+      }
+      
+      .grid__1 .menu {
+        grid-area: m;
+      }
+      
+      .grid__1 .content {
+        grid-area: c;
+      }
+      
+      .grid__1 .footer {
+        grid-area: f;
+      }
+        </pre
+          >
+        </code>
+        <code>
+          <pre>
+            .grid__2 {
+              height: 80vh;
+              display: grid;
+              grid-template-columns: repeat(12, 1fr); /*v*/
+              grid-template-rows: 40px auto 40px; /*-->*/
+              gap: 3px;
+              grid-template-areas:
+                "h h h h h h h h h h h h"
+                "m m c c c c c c c c c c"
+                "f f f f f f f f f f f f";
+                border: 1px solid #071a52;
+            }
+            .grid__2 .header {
+              grid-area: h;
+            }
+            
+            .grid__2 .menu {
+              grid-area: m;
+            }
+            
+            .grid__2 .content {
+              grid-area: c;
+            }
+            
+            .grid__2 .footer {
+              grid-area: f;
+            }
+        </pre
+          >
+        </code>
+      </div>
+
+      <div class="back">
+        <a href="../../index.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>

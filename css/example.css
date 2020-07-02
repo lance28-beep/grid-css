@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 100px 40px;
+  gap: 2px;
+}
+
+.header {
+  grid-column: span 12;
+}
+
+.menu {
+  grid-column: span 4;
+}
+
+.content {
+  grid-column: span 8;
+}
+
+.footer {
+  grid-column: span 12;
+}
+
+.wrapper div {
+  background-color: #17b978;
+  color: #071a52;
+  text-align: center;
+  padding: auto;
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    grid-column: span 6;
+  }
+
+  .menu {
+    grid-row: 1;
+    grid-column: span 6;
+  }
+
+  .content {
+    grid-column: span 12;
+  }
+}

@@ -1,0 +1,43 @@
+h1 {
+  color: #ff6f69;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.grid__list {
+  padding-left: 0;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 80px;
+}
+
+.grid__list :nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.grid__list :nth-child(6) {
+  grid-column: 1 / span 2;
+}
+
+li:hover {
+  background-color: #ff6f69;
+}
+
+.grid__list li,
+.grid__list a {
+  background-color: #17b978;
+  color: #071a52;
+  text-align: center;
+  padding: auto;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
+ul + h2 {
+  margin-top: 20px;
+  background-color: #ff6f69;
+}

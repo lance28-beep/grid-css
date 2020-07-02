@@ -1,0 +1,82 @@
+.display__col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+/* Grid 1 example */
+.grid__1 {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /*v*/
+  grid-template-rows: 40px auto 40px; /*-->*/
+  gap: 3px;
+  grid-template-areas:
+    "m m h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+  border: 1px solid #071a52;
+}
+.grid__1 .header {
+  grid-area: h;
+}
+
+.grid__1 .menu {
+  grid-area: m;
+}
+
+.grid__1 .content {
+  grid-area: c;
+}
+
+.grid__1 .footer {
+  grid-area: f;
+}
+
+/* Grid 1 example */
+.grid__2 {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /*v*/
+  grid-template-rows: 40px auto 40px; /*-->*/
+  gap: 3px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+  border: 1px solid #071a52;
+}
+.grid__2 .header {
+  grid-area: h;
+}
+
+.grid__2 .menu {
+  grid-area: m;
+}
+
+.grid__2 .content {
+  grid-area: c;
+}
+
+.grid__2 .footer {
+  grid-area: f;
+}
+
+/* default */
+.grid div {
+  background-color: #17b978;
+}
+.grid div:nth-child(even) {
+  background-color: #086972;
+}
+
+pre {
+  background-color: #071a52;
+  text-align: left;
+  padding: 20px 0;
+  color: #17b978;
+}
+
+.back a {
+  padding: 20px;
+  text-decoration: none;
+}

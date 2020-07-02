@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/basic.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>template areas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Example 1</h2>
+      <div class="grid grid__1">
+        <div class="one">1</div>
+        <div class="one">2</div>
+        <div class="one">3</div>
+        <div class="one">4</div>
+        <div class="one">5</div>
+        <div class="one">6</div>
+        <div class="one">7</div>
+        <div class="one">8</div>
+        <div class="one">9</div>
+        <div class="one">10</div>
+        <div class="one">11</div>
+        <div class="one">12</div>
+        <div class="one">13</div>
+        <div class="one">14</div>
+        <div class="one">15</div>
+        <div class="one">16</div>
+        <div class="one">17</div>
+        <div class="one">18</div>
+        <div class="one">19</div>
+        <div class="one">20</div>
+      </div>
+      <div class="display__col">
+        <code>
+          <pre>
+            .grid__1 {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*v*/
+              grid-template-rows: repeat(3, 100px); /*-->*/
+              gap: 3px;
+              border: 1px solid #071a52;
+            }
+        </pre
+          >
+      </div>
+
+      <div class="back">
+        <a href="../../index.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>

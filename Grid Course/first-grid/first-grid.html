@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/basic.css" />
+    <link rel="stylesheet" href="first-grid.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Example 1</h2>
+      <div class="grid grid__1">
+        <div>
+          1 <br />
+          180 x 50
+        </div>
+        <div>
+          2 <br />
+          180 x auto
+        </div>
+        <div>
+          3 <br />
+          180 x 200
+        </div>
+        <div>
+          4 <br />
+          180 x auto
+        </div>
+        <div>
+          5 <br />
+          180 x auto
+        </div>
+        <div>
+          6 <br />
+          180 x auto
+        </div>
+      </div>
+      <code>
+        <pre>
+            .grid__1 {
+                display: grid;
+                grid-template-columns: 180px auto; /*v*/
+                grid-template-rows: 50px 50px 200px; /*-->*/
+                gap: 2px;
+              }
+            </pre
+        >
+      </code>
+      <h2>Example 2</h2>
+      <div class="grid grid__2">
+        <div>
+          1 <br />
+          180 x 50
+        </div>
+        <div>
+          2 <br />
+          180 x auto
+        </div>
+        <div>
+          3 <br />
+          100 x 50
+        </div>
+        <div>
+          4 <br />
+          180 x 50
+        </div>
+        <div>
+          5 <br />
+          180 x auto
+        </div>
+        <div>
+          6 <br />
+          180 x 50
+        </div>
+      </div>
+      <code>
+        <pre>
+            .grid__2 {
+                display: grid;
+                grid-template-columns: 180px auto 100px; /*v*/
+                grid-template-rows: 50px 50px; /*-->*/
+                gap: 2px;
+              }
+            </pre
+        >
+      </code>
+      <h2>Example 3</h2>
+      <div class="grid grid__3">
+        <div>
+          1 <br />
+         auto x 50
+        </div>
+        <div>
+          2 <br />
+          auto x 50
+        </div>
+        <div>
+          3 <br />
+          auto x 200
+        </div>
+        <div>
+          4 <br />
+          auto x 200
+        </div>
+        <div>
+          5 <br />
+          auto x 50
+        </div>
+        <div>
+          6 <br />
+          auto x 50
+        </div>
+      </div>
+      <code>
+        <pre>
+            .grid__3 {
+                display: grid;
+                grid-template-columns: auto auto; /*v*/
+                grid-template-rows: 50px 200px 50px;/*-->*/
+                gap: 2px;
+              }         
+            </pre
+        >
+      </code>
+
+      <div class="back">
+        <a href="../../index.html">Back</a>
+    </div>
+    </div>
+
+
+  </body>
+</html>

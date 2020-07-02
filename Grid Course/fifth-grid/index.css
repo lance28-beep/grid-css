@@ -1,0 +1,28 @@
+/* Grid 1 example */
+.grid__1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*v*/
+  grid-template-rows: repeat(3, 100px); /*-->*/
+  gap: 3px;
+  border: 1px solid #071a52;
+}
+
+/* default */
+.grid div {
+  background-color: #17b978;
+}
+.grid div:nth-child(even) {
+  background-color: #086972;
+}
+
+pre {
+  background-color: #071a52;
+  text-align: left;
+  padding: 20px 0;
+  color: #17b978;
+}
+
+.back a {
+  padding: 20px;
+  text-decoration: none;
+}

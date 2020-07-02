@@ -1,0 +1,42 @@
+/* Grid 1 example */
+.grid__1 {
+  display: grid;
+  grid-template-columns: 180px auto; /*v*/
+  grid-template-rows: 50px 50px 200px; /*-->*/
+  gap: 2px;
+}
+
+/* Grid 2 example */
+.grid__2 {
+  display: grid;
+  grid-template-columns: 180px auto 100px; /*v*/
+  grid-template-rows: 50px 50px; /*-->*/
+  gap: 2px;
+}
+
+/* Grid 3 example */
+.grid__3 {
+  display: grid;
+  grid-template-columns: auto auto; /*v*/
+  grid-template-rows: 50px 200px 50px;/*-->*/
+  gap: 2px;
+}
+
+.grid div {
+  background-color: #17b978;
+}
+.grid div:nth-child(even) {
+  background-color: #086972;
+}
+
+pre {
+  background-color: #071a52;
+  text-align: left;
+  padding: 20px 0;
+  color: #17b978;
+}
+
+.back a{
+    padding: 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/basic.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Example 1</h2>
+      <div class="grid grid__1">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+      </div>
+      <code>
+        <pre>
+          grid__1 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /*v*/
+            grid-template-rows: 40px 200px 40px; /*-->*/
+            gap: 3px;
+          }
+          
+          .grid__1 .header {
+            grid-column: 2/ -1;
+          }
+          
+          .grid__1 .menu {
+            grid-row: 1/ 3;
+          }
+          
+          .grid__1 .content {
+            grid-column: 2 / -1;
+          }
+          
+          .grid__1 .footer {
+            grid-column: 1 / -1;
+          }
+            </pre
+        >
+      </code>
+      <h2>Example 2</h2>
+      <div class="grid grid__2">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+      </div>
+      <code>
+        <pre>
+          .grid__2 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /*v*/
+            grid-template-rows: 40px 200px 40px; /*-->*/
+            gap: 3px;
+          }
+          
+          .grid__2 .header {
+            grid-column: 2/ -1;
+          }
+          
+          .grid__2 .menu {
+            grid-row: 1/ 4;
+          }
+          
+          .grid__2 .content {
+            grid-column: 2 / -1;
+          }
+          
+          .grid__2 .footer {
+            grid-column: 2 / -1;
+          }rid-column: 1 / -1;
+          }
+            </pre
+        >
+      </code>
+      <h2>experiment</h2>
+      <div class="experiment">
+        <div class="sample-1">
+          <div class="one">one</div>
+          <div class="two">two</div>
+          <div class="three">three</div>
+          <div class="four">four</div>
+          <div class="five">five</div>
+          <div class="six">six</div>
+          <div class="seven">seven</div>
+          <div class="eight">eight</div>
+          <div class="nine">nine</div>
+          <div class="ten">ten</div>
+        </div>
+        <div class="sample-2">
+          <div class="one">one</div>
+          <div class="two">two</div>
+          <div class="three">three</div>
+          <div class="four">four</div>
+          <div class="five">five</div>
+          <div class="six">six</div>
+          <div class="seven">seven</div>
+          <div class="eight">eight</div>
+          <div class="nine">nine</div>
+          <div class="ten">ten</div>
+        </div>
+      </div>
+      <div class="experiment-sample">
+        <div class="code-1">
+          <h4>sample 1</h4>
+          <code>
+            <pre>
+              .sample-1 {
+                display: grid;
+                gap: 4px;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(6, auto); /*-->*/
+              }
+              
+              .sample-1 .one {
+                grid-column: 1 / 11;
+              }
+              
+              .sample-1 .two {
+                grid-column: 1 / 4;
+                grid-row: 2 / 4;
+              }
+              
+              .sample-1 .three {
+                grid-column: 8 / 11;
+              }
+              
+              .sample-1 .four {
+                grid-column: 4 / 8;
+                grid-row: 2 / 4;
+              }
+              
+              .sample-1 .five {
+                grid-column: 8 / 11;
+              }
+              
+              .sample-1 .six {
+                grid-column: 2 / -1;
+              }
+              
+              .sample-1 .seven {
+                grid-column: 1 / 2;
+                grid-row: 4 / 6;
+              }
+              
+              .sample-1 .eight {
+                grid-column: 2 / 6;
+              }
+              
+              .sample-1 .nine {
+                grid-column: 1 / 6;
+              }
+              
+              .sample-1 .ten {
+                grid-column: 6 / -1;
+                grid-row: 5/ 7;
+              }
+              
+
+
+
+
+
+              
+                </pre
+            >
+          </code>
+        </div>
+        <div class="code-2">
+          <h4>sample 2</h4>
+          <code>
+            <pre>
+              .sample-2 {
+                display: grid;
+                gap: 4px;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(6, auto); /*-->*/
+              }
+              
+              .sample-2 .one {
+                grid-column: 1 / 8;
+                grid-row: 5 / 6;
+              }
+              
+              .sample-2 .two {
+                grid-column: 1 / 11;
+                grid-row: 4 / 5;
+              }
+              
+              .sample-2 .three {
+                grid-column: 8 / 11;
+                grid-row: 5 / 6;
+              }
+              
+              .sample-2 .four {
+                grid-column: 5 / 11;
+                grid-row: 1 / 4;
+              }
+              .sample-2 .five {
+                grid-column: 4 / 8;
+                grid-row: 6 / 7;
+              }
+              
+              .sample-2 .six {
+                grid-column: 1 / 5;
+                grid-row: 1 / 3;
+              }
+              
+              .sample-2 .seven {
+                grid-column: 8 / 11;
+                grid-row: 6 / 7;
+              }
+              
+              
+              .sample-2 .eight {
+                grid-column: 1 / 4;
+                grid-row: 3 / 4;
+              }
+              
+              .sample-2 .nine {
+                grid-column: 4 / 5;
+                grid-row: 3 / 4;
+              }
+              
+              .sample-2 .ten {
+                grid-column: 1 / 4;
+                grid-row: 6 / 7;
+              }
+              
+                </pre
+            >
+          </code>
+        </div>
+      </div>
+      <div class="back">
+        <a href="../../index.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
