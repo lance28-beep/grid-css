@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 50px 50px;
+  gap: 5px;
+}
+
+.container div {
+  background-color: red;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
